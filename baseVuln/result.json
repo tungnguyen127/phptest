@@ -1,0 +1,333 @@
+{
+    "$schema": "https:\/\/json.schemastore.org\/sarif-2.1.0.json",
+    "version": "2.1.0",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "yeuphp",
+                    "semanticVersion": "0.0.1",
+                    "informationUri": "https:\/\/tiki.vn"
+                }
+            },
+            "results": [
+                {
+                    "message": {
+                        "text": "A controllable expression is used as the method name"
+                    },
+                    "ruleId": "A controllable expression is used as the method name",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                },
+                                "region": {
+                                    "startLine": 40,
+                                    "startColumn": 1,
+                                    "endLine": 40,
+                                    "endColumn": 29
+                                }
+                            },
+                            "message": {
+                                "text": "$also_name->$password($name)"
+                            }
+                        }
+                    ],
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "startColumn": 2,
+                                                        "endLine": 1,
+                                                        "endColumn": 3
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": " (\/usr\/src\/Vuln.php) | []"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 40,
+                                                        "startColumn": 1,
+                                                        "endLine": 40,
+                                                        "endColumn": 29
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "$also_name->$password($name)"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "A controllable expression is used as the method name"
+                    },
+                    "ruleId": "A controllable expression is used as the method name",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                },
+                                "region": {
+                                    "startLine": 41,
+                                    "startColumn": 1,
+                                    "endLine": 41,
+                                    "endColumn": 22
+                                }
+                            },
+                            "message": {
+                                "text": "$also_name($password)"
+                            }
+                        }
+                    ],
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "startColumn": 2,
+                                                        "endLine": 1,
+                                                        "endColumn": 3
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": " (\/usr\/src\/Vuln.php) | []"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 41,
+                                                        "startColumn": 1,
+                                                        "endLine": 41,
+                                                        "endColumn": 22
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "$also_name($password)"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "Command Injection"
+                    },
+                    "ruleId": "Command Injection",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                },
+                                "region": {
+                                    "startLine": 29,
+                                    "startColumn": 12,
+                                    "endLine": 29,
+                                    "endColumn": 25
+                                }
+                            },
+                            "message": {
+                                "text": "system($name)"
+                            }
+                        }
+                    ],
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "startColumn": 2,
+                                                        "endLine": 1,
+                                                        "endColumn": 3
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": " (\/usr\/src\/Vuln.php) | []"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 45,
+                                                        "startColumn": 1,
+                                                        "endLine": 45,
+                                                        "endColumn": 14
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "func03($name)"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 24,
+                                                        "startColumn": 1,
+                                                        "endLine": 30,
+                                                        "endColumn": 2
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "Test\\func03 (\/usr\/src\/Vuln.php) | [0]"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 29,
+                                                        "startColumn": 12,
+                                                        "endLine": 29,
+                                                        "endColumn": 25
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "system($name)"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "message": {
+                        "text": "SQL Injection"
+                    },
+                    "ruleId": "SQL Injection",
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                },
+                                "region": {
+                                    "startLine": 49,
+                                    "startColumn": 1,
+                                    "endLine": 49,
+                                    "endColumn": 20
+                                }
+                            },
+                            "message": {
+                                "text": "$wpdb->query($name)"
+                            }
+                        }
+                    ],
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 1,
+                                                        "startColumn": 2,
+                                                        "endLine": 1,
+                                                        "endColumn": 3
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": " (\/usr\/src\/Vuln.php) | []"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "location": {
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "file:\/\/\/usr\/src\/Vuln.php"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 49,
+                                                        "startColumn": 1,
+                                                        "endLine": 49,
+                                                        "endColumn": 20
+                                                    }
+                                                },
+                                                "message": {
+                                                    "text": "$wpdb->query($name)"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
